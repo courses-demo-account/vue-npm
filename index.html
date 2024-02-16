@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "vue": "./node_modules/vue/dist/vue.esm-browser.prod.js"
+          }
+        }
+    </script>
+    <script type="module" src="./assets/js/app.js"></script>
+</head>
+<body>
+    <div id="app" class="container mt-3">
+        <h1>{{ appTitle }}</h1>
+        <button @click="clicks++" class="btn btn-success">
+            Clicks: {{ clicks }}
+        </button>
+    </div>
+</body>
+</html>
